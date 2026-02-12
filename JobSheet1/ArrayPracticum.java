@@ -59,20 +59,32 @@ public class ArrayPracticum {
             totalSks += sks[i];
         }
 
-        // Hitung IP
         double ip = totalNilai / totalSks;
 
-        System.out.println("================================");
-        System.out.println("Hasil Konversi Nilai");
-        System.out.println("================================");
+        System.out.println("=======================================================================");
+        System.out.println("\t\t\tHasil Konversi Nilai");
+        System.out.println("=======================================================================");
         
-        System.out.println("MK                                    Nilai Angka   Nilai Huruf   Bobot Nilai");
+
+        System.out.println("Mata Kuliah\t\t\t\t  Nilai Angka   Nilai Huruf   Bobot");
         
         for (int i = 0; i < 8; i++) {
-            System.out.println(matkul[i] + "    " + nilaiAngka[i] + "    " + nilaiHuruf[i] + "    " + nilaiSetara[i]);
+            System.out.print(matkul[i]);
+            
+            if (matkul[i].length() < 15) {
+                System.out.print("\t\t\t\t    "); 
+            } else if (matkul[i].length() < 25) {
+                System.out.print("\t\t\t    ");  
+            } else if (matkul[i].length() < 35) {
+                System.out.print("\t\t    ");   
+            } else {
+                System.out.print("\t    ");
+            }
+
+            System.out.println(nilaiAngka[i] + "\t      " + nilaiHuruf[i] + "\t\t    " + nilaiSetara[i]);
         }
 
-        System.out.println("================================");
-        System.out.println("IP : " + ip);
+        System.out.println("=======================================================================");
+        System.out.println("IP : " + (double)Math.round(ip * 100) / 100);
     }
 }

@@ -1,6 +1,31 @@
 package JobSheet2;
 
 public class Mahasiswa12 {
+
+    public Mahasiswa12(){
+
+    }
+
+    public Mahasiswa12 (String nm, String nim, double ipk, String kls){
+        nama = nm;
+        this.nim = nim;
+        this.ipk = ipk;
+        kelas = kls;
+    }
+
+    Mahasiswa12 mhs1 = new Mahasiswa12();
+    mhs1.nama = "Muhammad Ali Farhan";
+    mhs1.nim = "2241720171";
+    mhs1.kelas = "SI 2J";
+    mhs1.ipk = 3.55;
+
+    mhsl.tampilkanInformasi();
+    mhsl.ubahKelas("SI 2K");
+    mhsl.udpdateIPK(3.60);
+    mhsl.tampilkanInformasi();
+
+    Mahasiswa12 mhs2 = new Mahasiswa12("Annisa Nabila", "2141720160", 3.25, "TI 2L");
+
     String nama;
     String nim;
     String kelas;

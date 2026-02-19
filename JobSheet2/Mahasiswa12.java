@@ -17,8 +17,12 @@ public class Mahasiswa12 {
         kelas = kelasBaru;
     }
 
-    void udpdateIPK(Double ipkBaru){
+    void udpdateIPK(Double ipkBaru) {
+        if (ipkBaru >= 0.0 && ipkBaru <= 4.0) {
         ipk = ipkBaru;
+        } else {
+        System.out.println("GPA is invalid. Must be between 0.0 and 4.0");
+        }
     }
 
     String nilaiKinerja(){

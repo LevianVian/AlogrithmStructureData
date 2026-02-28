@@ -1,12 +1,5 @@
 package JobSheet3;
 
-class Mahasiswa {
-    public String nim;
-    public String name;
-    public String grade;
-    public float gpa;
-}
-
 public class MahasiswaDemo12 {
     
     public static void main(String[] args) {

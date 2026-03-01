@@ -5,14 +5,14 @@ public class MahasiswaDemo12 {
     
     public static void main(String[] args) {
         
-        Mahasiswa[] arrayOfMahasiswa = new Mahasiswa[3];
+        Mahasiswa12[] arrayOfMahasiswa = new Mahasiswa12[3];
 
 
     Scanner sc = new Scanner (System.in);
     String dummy;
 
     for (int i=0; i < 3; i++){
-        arrayOfMahasiswa[i] = new Mahasiswa();
+        arrayOfMahasiswa[i] = new Mahasiswa12();
         System.out.println("Masukkan Data Mahasiswa ke-" + (i + 1));
         System.out.println("NIM     :");
         arrayOfMahasiswa[i].nim = sc.nextLine();

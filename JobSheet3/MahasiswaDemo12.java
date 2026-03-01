@@ -26,13 +26,9 @@ public class MahasiswaDemo12 {
         System.out.println("==================================");
         }
 
-        for (int j=0; j < 3; j++){
+        for (int j = 0; j < 3; j++) {
             System.out.println("Data Mahasiswa ke-" + (j + 1));
-            System.out.println("NIM        : " + arrayOfMahasiswa[j].nim);
-            System.out.println("Name       : " + arrayOfMahasiswa[j].name);
-            System.out.println("Grade      : " + arrayOfMahasiswa[j].grade);
-            System.out.println("GPA        : " + arrayOfMahasiswa[j].gpa);
-            System.out.println("==================================");
+            arrayOfMahasiswa[j].printInfo(); 
         }
 
         // arrayOfMahasiswa[0] = new Mahasiswa();

@@ -3,6 +3,7 @@ package Jobsheet10.experiment.structure;
 import model.Student12;
 
 public class StudentAssignmentStack12 {
+    StudentAssignmentStack12 stack = new StudentAssignmentStack12(5)
     private Student12[] stack;
     private int size;
     private int top;
@@ -19,6 +20,10 @@ public class StudentAssignmentStack12 {
 
     public boolean isEmpty() {
         return top == -1;
+    }
+
+    public int getCount() {
+        return top + 1;
     }
 
     public void push(Student12 std) {
@@ -48,6 +53,10 @@ public class StudentAssignmentStack12 {
             System.out.println("There is no data in Stack!!");
             return null;
         }
+    }
+
+    public Student12 peekFirst() {
+        return isEmpty() ? null : stack[0]; 
     }
 
     public void print() {

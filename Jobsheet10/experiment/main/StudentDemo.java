@@ -54,6 +54,12 @@ public class StudentDemo {
                     System.out.println("Name\tNIM\tClass Name");
                     stack.print();
                     break;
+                case 5:
+                    Student12 first = stack.peekFirst();
+                    if (first != null) {
+                        System.out.println("First assignment submitted by: " + first.getName());
+                    }
+                break;
                 default:
                     if (choice < 1 || choice > 4) {
                         System.out.println("Invalid choice.");

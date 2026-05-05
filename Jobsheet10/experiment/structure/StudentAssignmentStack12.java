@@ -65,4 +65,21 @@ public class StudentAssignmentStack12 {
         }
         System.out.println("");
     }
+
+    public String convertToBinary(int grade) {
+        ConversionStack12 binStack = new ConversionStack12();
+        
+        while (grade > 0) {
+            int mod = grade % 2;
+            binStack.push(mod);
+            grade = grade / 2;
+        }
+        
+        String binary = "";
+        while (!binStack.isEmpty()) {
+            binary += binStack.pop();
+        }
+        
+        return binary;
+    }
 }

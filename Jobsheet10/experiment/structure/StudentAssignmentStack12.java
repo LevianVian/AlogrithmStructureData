@@ -1,9 +1,8 @@
 package Jobsheet10.experiment.structure;
 
-import model.Student12;
+import Jobsheet10.experiment.model.Student12;
 
 public class StudentAssignmentStack12 {
-    StudentAssignmentStack12 stack = new StudentAssignmentStack12(5)
     private Student12[] stack;
     private int size;
     private int top;

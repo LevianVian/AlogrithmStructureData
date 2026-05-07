@@ -4,7 +4,7 @@ import Jobsheet10.experiment.model.Student12;
 import Jobsheet10.experiment.structure.StudentAssignmentStack12;
 import java.util.Scanner;
 
-public class StudentDemo {
+public class StudentDemo12 {
     public static void main(String[] args) {
         StudentAssignmentStack12 stack = new StudentAssignmentStack12(5);
         Scanner scan = new Scanner(System.in);
@@ -41,6 +41,9 @@ public class StudentDemo {
                         int grade = scan.nextInt();
                         graded.grading(grade);
                         System.out.printf("Assignment grade of %s is %d\n", graded.getName(), grade);
+                        
+                        String binary = stack.convertToBinary(grade);
+                        System.out.printf("Assignment grade in binary is %s\n", binary);
                     }
                     break;
                 case 3:

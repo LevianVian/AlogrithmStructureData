@@ -22,5 +22,18 @@ public class DoubleLinkedListMain {
         
         dll.insertAfter("120", new Student("116", "Eiyu", "TI-1I", 3.4));
         dll.print();
+
+        System.out.println("--------------------------");
+        System.out.println("Experiment 2 for Removing Data");
+        System.out.println("---------------------------");
+        
+        dll.removeFirst();
+        dll.print();
+        
+        dll.removeLast();
+        dll.print();
+        
+        dll.remove(1);
+        dll.print();
     }
 }

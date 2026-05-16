@@ -94,15 +94,18 @@ public class DoubleLinkedList {
         }
     }
 
-    void remove(int index) {
-        if (isEmpty()) {
-            System.out.println("Double linked list is currently empty!!");
+    void remove(int index) throws Exception {
+        if (isEmpty() || index < 0) {
+            throw new Exception("Index out of bounds or list is empty.");
         } else if (index == 0) {
             removeFirst();
         } else {
             Node temp = head;
             for (int i = 0; i < index; i++) {
                 temp = temp.next;
+                if (temp == null) {
+                    throw new Exception("Index out of bounds.");
+                }
             }
             if (temp == tail) {
                 removeLast();
